@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		0A0A000F2C00100100000000 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A000E2C00100100000000 /* Models.swift */; };
 		0A0A00112C00100100000000 /* MilestoneLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A00102C00100100000000 /* MilestoneLibrary.swift */; };
 		0A0A00132C00100100000000 /* DevelopmentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A00122C00100100000000 /* DevelopmentStore.swift */; };
+		5C8F23642FA3D4700098FEF4 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8F23632FA3D4700098FEF4 /* Media.xcassets */; };
+		5C8F23682FA3D8510098FEF4 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8F23672FA3D8510098FEF4 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		0A0A000E2C00100100000000 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		0A0A00102C00100100000000 /* MilestoneLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneLibrary.swift; sourceTree = "<group>"; };
 		0A0A00122C00100100000000 /* DevelopmentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentStore.swift; sourceTree = "<group>"; };
+		5C8F23632FA3D4700098FEF4 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		5C8F23672FA3D8510098FEF4 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		5C8F23692FA769DC0098FEF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 		0A0A00012C00100100000000 = {
 			isa = PBXGroup;
 			children = (
+				5C8F23672FA3D8510098FEF4 /* Media.xcassets */,
 				0A0A00092C00100100000000 /* BabyMilestones */,
 				0A0A00082C00100100000000 /* Products */,
 			);
@@ -53,11 +59,13 @@
 		0A0A00092C00100100000000 /* BabyMilestones */ = {
 			isa = PBXGroup;
 			children = (
+				5C8F23692FA769DC0098FEF4 /* Info.plist */,
 				0A0A000A2C00100100000000 /* BabyMilestonesApp.swift */,
 				0A0A000C2C00100100000000 /* ContentView.swift */,
 				0A0A000E2C00100100000000 /* Models.swift */,
 				0A0A00102C00100100000000 /* MilestoneLibrary.swift */,
 				0A0A00122C00100100000000 /* DevelopmentStore.swift */,
+				5C8F23632FA3D4700098FEF4 /* Media.xcassets */,
 			);
 			path = BabyMilestones;
 			sourceTree = "<group>";
@@ -121,6 +129,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8F23642FA3D4700098FEF4 /* Media.xcassets in Resources */,
+				5C8F23682FA3D8510098FEF4 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,13 +272,16 @@
 		0A0A00172C00100100000000 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 97W729H996;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Рост рядом";
+				INFOPLIST_FILE = BabyMilestones/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Evie;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -284,22 +297,29 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.evgeny.BabyMilestones;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0A0A00192C00100100000000 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 97W729H996;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Рост рядом";
+				INFOPLIST_FILE = BabyMilestones/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Evie;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -315,9 +335,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.evgeny.BabyMilestones;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
